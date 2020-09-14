@@ -1,8 +1,8 @@
-# GZP1_TASK1_JAVA_APPLICATION_DEVELOPMENT
+# GZP1 TASK 1: JAVA APPLICATION DEVELOPMENT
 
-**IF YOU ARE READING THIS AND TAKING COURSES AT WGU PLEASE READ THIS LINE: If you are just starting this project TIME IS SO IMPORTANT. Have a plan from the beginning on how to get and convert time from LOCALDATETIME to UTC and FROM STRING to BOTH. 
+*IF YOU ARE READING THIS AND TAKING COURSES AT WGU PLEASE READ THIS LINE: If you are just starting this project TIME IS SO IMPORTANT. Have a plan from the beginning on how to get and convert time from LOCALDATETIME to UTC and FROM STRING to BOTH. 
 
-**I feel like the biggest flaw of my project was being inconsistent with how I handled the time in appointment scheduling and it lead to a lot of custom methods for converting time from one form to another. MAKE SURE you can get LocalDateTime.Now() and convert it to UTC and a STRING and STRING to LDT and UTC. And stay consitent with how you get and handle time. It will save you a lot of headache. 
+*I feel like the biggest flaw of my project was being inconsistent with how I handled the time in appointment scheduling and it lead to a lot of custom methods for converting time from one form to another. MAKE SURE you can get LocalDateTime.Now() and convert it to UTC and a STRING and STRING to LDT and UTC. And stay consitent with how you get and handle time. It will save you a lot of headache. 
 
 INTRODUCTION
 Throughout your career in software design and development, you will be asked to create applications with various features and criteria based on a variety of business requirements. For this assessment, you will create your own Java application with requirements that mirror those you will encounter in a real-world job assignment.
