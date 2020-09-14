@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Customer_Main_Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="728.0" prefWidth="1024.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="728.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: #c4c4c4;">
+               <children>
+                  <Label text="MENU">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="appointmentsMenuBtn" mnemonicParsing="false" onAction="#onActionLaunchAppointments" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="APPOINTMENTS" />
+                  <Button fx:id="reportsMenuBtn" layoutX="60.0" layoutY="359.0" mnemonicParsing="false" onAction="#onActionLaunchReports" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="REPORTS" />
+                  <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#onActionQuit" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #e34444; -fx-text-fill: white;" text="QUIT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="500.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="768.0" prefWidth="874.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="854.0" spacing="10.0">
+                     <children>
+                        <Label text="CUSTOMERS MAIN MENU">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="225.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="500.0" prefWidth="854.0">
+                     <children>
+                        <TableView fx:id="customersTable" prefHeight="475.0" prefWidth="824.0">
+                          <columns>
+                              <TableColumn fx:id="custIDCol" prefWidth="100.0" text="Cust. ID" />
+                            <TableColumn fx:id="custNameCol" prefWidth="100.0" text="Cust Name" />
+                            <TableColumn fx:id="addressCol" prefWidth="115.0" text="Address" />
+                              <TableColumn fx:id="activeCol" prefWidth="100.0" text="Active" />
+                              <TableColumn fx:id="createdDateCol" prefWidth="100.0" text="Created Date" />
+                              <TableColumn fx:id="createdByCol" prefWidth="100.0" text="Created By" />
+                              <TableColumn fx:id="lastUpdatedCol" prefWidth="100.0" text="Last Updated" />
+                              <TableColumn fx:id="lastUpdatedByCol" prefWidth="100.0" text="Last Updated By" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Manage Customers:" underline="true">
+                           <font>
+                              <Font name="Arial" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="824.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="addCustBtn" mnemonicParsing="false" onAction="#onActionAddCust" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="ADD">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="updateCustBtn" layoutX="389.0" layoutY="36.0" mnemonicParsing="false" onAction="#onActionUpdateCust" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="UPDATE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="deleteCustBtn" layoutX="447.0" layoutY="36.0" mnemonicParsing="false" onAction="#onActionDeleteCust" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="DELETE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="newAppointmentBtn" layoutX="345.0" layoutY="43.0" mnemonicParsing="false" onAction="#onActionNewAppointment" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="NEW APPT.">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

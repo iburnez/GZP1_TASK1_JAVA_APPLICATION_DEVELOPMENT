@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Reports_Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="728.0" prefWidth="1024.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="728.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: #c4c4c4;">
+               <children>
+                  <Label text="MENU">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="appointmentsMenuBtn" mnemonicParsing="false" onAction="#onActionLaunchAppointments" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="APPOINTMENTS" />
+                  <Button fx:id="customerMenuBtn1" layoutX="20.0" layoutY="83.0" mnemonicParsing="false" onAction="#onActionLaunchCustomers" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="CUSTOMERS" />
+                  <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#onActionQuit" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #e34444; -fx-text-fill: white;" text="QUIT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="500.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="768.0" prefWidth="874.0">
+               <children>
+                  <VBox prefHeight="75.0" prefWidth="854.0" spacing="10.0">
+                     <children>
+                        <Label text="REPORTS">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="300.0" />
+                           </VBox.margin>
+                        </Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <Label text="See # of Appointment Types per Month">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="apptTypeByMonthBtn" mnemonicParsing="false" onAction="#onActionGenerateApptTypeByMonth" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="GENERATE" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <Label text="Schedule by Consultant">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="consultantScheduleBtn" prefWidth="150.0" />
+                                    <Button fx:id="scheduleGenerateBtn" mnemonicParsing="false" onAction="#onActionGenerateUserSchedule" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="GENERATE" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="67.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <Label text="Schedule By Appointment Type: ">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="typeScheduleBtn1" prefWidth="150.0" />
+                                    <Button fx:id="apptTypeSchedReportBtn" mnemonicParsing="false" onAction="#OnActionApptTypeSchedule" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="GENERATE" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="500.0" prefWidth="854.0">
+                     <children>
+                        <TableView fx:id="appointmentsTable" prefHeight="475.0" prefWidth="824.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="824.0" spacing="50.0">
+                           <children>
+                              <Button fx:id="exportReportBtn" layoutX="447.0" layoutY="36.0" mnemonicParsing="false" onAction="#onActionExportReport" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="EXPORT">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

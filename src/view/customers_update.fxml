@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Customer_Update_Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="728.0" prefWidth="1024.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="728.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: #c4c4c4;">
+               <children>
+                  <Label text="MENU">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="appointmentsMenuBtn" mnemonicParsing="false" onAction="#onActionLaunchAppointments" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="APPOINTMENTS" />
+                  <Button fx:id="customersMenuBtn1" layoutX="20.0" layoutY="83.0" mnemonicParsing="false" onAction="#onActionLaunchCustomers" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="CUSTOMERS" />
+                  <Button fx:id="reportsMenuBtn" layoutX="60.0" layoutY="359.0" mnemonicParsing="false" onAction="#onActionLaunchReports" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="REPORTS" />
+                  <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#onActionQuit" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #e34444; -fx-text-fill: white;" text="QUIT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="450.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="768.0" prefWidth="874.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="854.0" spacing="10.0">
+                     <children>
+                        <Label text="UPDATE CUSTOMER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="250.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <GridPane hgap="15.0" vgap="15.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.42230224609375" minWidth="10.0" prefWidth="199.80941772460938" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="605.5849914550781" minWidth="10.0" prefWidth="604.1905822753906" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="custIDTxt" editable="false" GridPane.columnIndex="1" />
+                        <TextField fx:id="custNameTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="phoneTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="address1Txt" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="address2Txt" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="postalCodeTxt" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="cityTxt" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="countryTxt" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label text="Customer ID:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Customer Name:" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Phone:" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address Line 1: " GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address Line 2:" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Postal Code:" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="City:" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Country:" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Active:" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <children>
+                              <RadioButton fx:id="activeYesRBtn" mnemonicParsing="false" text="Yes">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="activeToggle" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="activeNoRBtn" layoutX="40.0" layoutY="10.0" mnemonicParsing="false" text="No" toggleGroup="$activeToggle">
+                                 <HBox.margin>
+                                    <Insets left="50.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <VBox prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="824.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="saveBtn" layoutX="345.0" layoutY="43.0" mnemonicParsing="false" onAction="#onActionSave" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="SAVE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="cancelBtn" layoutX="738.0" layoutY="43.0" mnemonicParsing="false" onAction="#onActionCancel" prefHeight="30.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="CANCEL">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

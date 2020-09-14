@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenu_Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="728.0" prefWidth="1024.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="728.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: #c4c4c4;">
+               <children>
+                  <Label text="MENU">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="customerMenuBtn" mnemonicParsing="false" onAction="#onActionLaunchCustomers" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="CUSTOMERS" />
+                  <Button fx:id="reportsMenuBtn" layoutX="60.0" layoutY="359.0" mnemonicParsing="false" onAction="#onActionLaunchReports" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="REPORTS" />
+                  <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#onActionQuit" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #e34444; -fx-text-fill: white;" text="QUIT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="500.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="768.0" prefWidth="874.0">
+               <children>
+                  <VBox prefHeight="75.0" prefWidth="854.0" spacing="10.0">
+                     <children>
+                        <Label text="APPOINTMENTS MAIN MENU">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="225.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Change Calander View" underline="true">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                           <children>
+                              <RadioButton fx:id="monthlyRadioBtn" mnemonicParsing="false" onAction="#onActionDisplayMonthly" selected="true" text="by Month">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="displayGroup" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="weeklyRadioBtn" mnemonicParsing="false" onAction="#onActionDisplayWeekly" text="by Week" toggleGroup="$displayGroup">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </RadioButton>
+                              <Label fx:id="monthOrweekLabel" prefWidth="100.0" text="MONTH: ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="displayDateLabel" layoutX="357.0" layoutY="15.0" prefWidth="150.0" text="DATE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="previousBtn" mnemonicParsing="false" onAction="#onActionPrevious" prefHeight="30.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="PREVIOUS">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="50.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="nextBtn" layoutX="468.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionNext" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="NEXT">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="460.0" prefWidth="854.0">
+                     <children>
+                        <TableView fx:id="appointmentsTable" prefHeight="450.0" prefWidth="824.0">
+                          <columns>
+                              <TableColumn fx:id="apptIDCol" prefWidth="60.0" text="Appt. ID" />
+                              <TableColumn fx:id="startTimeCol" prefWidth="155.0" text="Start Time" />
+                              <TableColumn fx:id="endTimeCol" prefWidth="155.0" text="End Time" />
+                              <TableColumn fx:id="cusIDCol" prefWidth="75.0" text="Customer ID" />
+                              <TableColumn fx:id="titleCol" text="Title" />
+                              <TableColumn fx:id="typeCol" text="Type" />
+                             <TableColumn fx:id="createdByCol" prefWidth="75.0" text="Created By" />
+                             <TableColumn fx:id="createDate" prefWidth="100.0" text="Created Date" />
+                              <TableColumn fx:id="lastUpdateByCol" prefWidth="90.0" text="Last Update By" />
+                              <TableColumn fx:id="lastUpdateCol" prefWidth="90.0" text="Last Update" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Manage Appointments:" underline="true">
+                           <font>
+                              <Font name="Arial" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="824.0" spacing="50.0">
+                           <children>
+                              <Button fx:id="addAppointmentBtn" mnemonicParsing="false" onAction="#onActionAddAppointment" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="ADD">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="updateAppointmentBtn" layoutX="389.0" layoutY="36.0" mnemonicParsing="false" onAction="#onActionUpdateAppointment" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="UPDATE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="deleteAppointmentBtn" layoutX="447.0" layoutY="36.0" mnemonicParsing="false" onAction="#onActionDeleteAppointment" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #5182b8; -fx-text-fill: white;" text="DELETE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

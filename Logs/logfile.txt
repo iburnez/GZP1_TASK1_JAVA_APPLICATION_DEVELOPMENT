@@ -1,0 +1,86 @@
+2020-09-12T23:10:56.056715[UTC], User Name: test, login successful.
+2020-09-12T23:11:10.679768[UTC], User Name: test, logout successful.
+2020-09-12T23:29:09.394833[UTC], User Name: test, login successful.
+2020-09-12T23:29:48.983241[UTC], User Name: test, Updated Appointment: 18
+2020-09-12T23:30:16.561733[UTC], User Name: test, Appointment Deleted:  model.Appointment@4e875ac4
+2020-09-12T23:33:31.890136[UTC], User Name: user, login successful.
+2020-09-12T23:34:00.626957[UTC], User Name: user, Updated Appointment: Appointment ID6
+2020-09-12T23:35:19.988967[UTC], User Name: admin, login successful.
+2020-09-12T23:35:44.290217[UTC], User Name: admin, Added New Appointment: Appointment ID 20
+2020-09-12T23:35:58.176913[UTC], User Name: admin, Report generated: # OF APPOINTMENT TYPE BY MONTH REPORT.
+2020-09-12T23:36:01.235915[UTC], User Name: admin, Report generated: CONSULTANT(USER) SCHEDULE REPORT.
+2020-09-12T23:36:03.560916[UTC], User Name: admin, Report generated: APPOINTMENT TYPE SCHEDULE REPORT.
+2020-09-12T23:36:49.789873[UTC], User Name: admin, New Customer Added: Customer Name Dexter Hurley
+2020-09-12T23:37:00.485158[UTC], User Name: admin, Customer Deleted: Customer Name  John Doe
+2020-09-12T23:37:09.634570[UTC], User Name: admin, Customer Deleted: Customer Name  Tom Delonge
+2020-09-12T23:37:26.400395[UTC], User Name: admin, Customer Deleted: Customer Name  James Green
+2020-09-12T23:37:42.078840[UTC], User Name: admin, Customer Deleted: Customer Name  Dexter Hurley
+2020-09-12T23:45:21.109699[UTC], User Name: admin, login successful.
+2020-09-12T23:45:42.910499[UTC], User Name: admin,  Add New Customer Successful: Customer ID  6
+2020-09-12T23:48:21.258681[UTC], User Name: teamMember, login successful.
+2020-09-12T23:48:58.480977[UTC], User Name: teamMember, Add New Appointment Successful: AppointmentID  21
+2020-09-12T23:49:36.190489[UTC], User Name: teamMember, Add New Appointment Successful: AppointmentID  22
+2020-09-12T23:50:18.353577[UTC], User Name: teamMember, Update Appointment Successful: AppointmentID  22
+2020-09-12T23:51:48.683307[UTC], User Name: teamMember, Delete Appointment Successful: AppointmentID  22
+2020-09-12T23:54:46.150941[UTC], User Name: teamMember, logout successful.
+2020-09-12T23:56:26.593924[UTC], User Name: test, login successful.
+2020-09-12T23:56:35.647807[UTC], User Name: test, logout successful.
+2020-09-13T02:21:17.388588[UTC], User Name: test, login successful.
+2020-09-13T02:21:26.694099[UTC], User Name: test, logout successful.
+2020-09-13T02:21:46.700652[UTC], User Name: test, login successful.
+2020-09-13T02:22:11.857468[UTC], User Name: test, logout successful.
+2020-09-13T03:15:12.577317[UTC], User Name: test, login successful.
+2020-09-13T03:15:14.197710[UTC], User Name: test, logout successful.
+2020-09-13T03:46:29.104193[UTC], User Name: user, login successful.
+2020-09-13T03:48:22.140795[UTC], User Name: user, Report generated: # OF APPOINTMENT TYPE BY MONTH REPORT.
+2020-09-13T03:48:24.721809[UTC], User Name: user, Report generated: CONSULTANT(USER) SCHEDULE REPORT.
+2020-09-13T03:48:27.032079[UTC], User Name: user, Report generated: APPOINTMENT TYPE SCHEDULE REPORT.
+2020-09-13T03:49:14.887713[UTC], User Name: user, logout successful.
+2020-09-13T03:49:36.691867[UTC], User Name: user, login successful.
+2020-09-13T03:50:06.876933[UTC], User Name: user,  Add New Customer Successful: Customer ID  7
+2020-09-13T03:50:22.303046[UTC], User Name: user, Deleted Customer Successful: Customer ID  7
+2020-09-13T03:50:34.432880[UTC], User Name: user,  Update Customer Successful: Customer ID  6
+2020-09-13T03:50:45.164986[UTC], User Name: user,  Update Customer Successful: Customer ID  6
+2020-09-13T03:52:53.587845[UTC], User Name: user, Add New Appointment Successful: AppointmentID  22
+2020-09-13T03:53:15.378357[UTC], User Name: user, Delete Appointment Successful: AppointmentID  22
+2020-09-13T03:57:45.217137[UTC], User Name: user, logout successful.
+2020-09-13T16:14:34.954075[UTC], User Name: test, login successful.
+2020-09-13T16:15:44.172494[UTC], User Name: test, login successful.
+2020-09-13T16:15:59.208743[UTC], User Name: test, logout successful.
+2020-09-13T16:27:25.185831[UTC], User Name: test, login successful.
+2020-09-13T16:27:27.783172[UTC], User Name: test, Report generated: # OF APPOINTMENT TYPE BY MONTH REPORT.
+2020-09-13T16:28:06.513293[UTC], User Name: test, logout successful.
+2020-09-13T16:30:14.552665[UTC], User Name: test, login successful.
+2020-09-13T16:35:22.962702[UTC], User Name: test, logout successful.
+2020-09-13T16:37:52.330916[UTC], User Name: test, login successful.
+2020-09-13T16:38:06.803495[UTC], User Name: test, Report generated: # OF APPOINTMENT TYPE BY MONTH REPORT.
+2020-09-13T16:38:44.271492[UTC], User Name: test, login successful.
+2020-09-13T16:38:46.860488[UTC], User Name: test, Report generated: # OF APPOINTMENT TYPE BY MONTH REPORT.
+2020-09-13T16:41:26.396436[UTC], User Name: test, login successful.
+2020-09-13T16:41:30.898484[UTC], User Name: test, Report generated: CONSULTANT(USER) SCHEDULE REPORT.
+2020-09-13T16:41:56.234978[UTC], User Name: test, login successful.
+2020-09-13T16:42:00.976264[UTC], User Name: test, Report generated: CONSULTANT(USER) SCHEDULE REPORT.
+2020-09-13T16:42:27.403720[UTC], User Name: test, logout successful.
+2020-09-13T19:34:42.010322[UTC], User Name: test, login successful.
+2020-09-13T19:34:45.516435[UTC], User Name: test, Report generated: # OF APPOINTMENT TYPE BY MONTH REPORT.
+2020-09-13T19:36:07.768393[UTC], User Name: test, login successful.
+2020-09-13T19:36:10.749242[UTC], User Name: test, Report generated: # OF APPOINTMENT TYPE BY MONTH REPORT.
+2020-09-13T19:36:39.406676[UTC], User Name: test, login successful.
+2020-09-13T19:36:43.747659[UTC], User Name: test, Report generated: CONSULTANT(USER) SCHEDULE REPORT.
+2020-09-13T19:40:27.451969[UTC], User Name: test, login successful.
+2020-09-13T19:40:32.805439[UTC], User Name: test, Report generated: CONSULTANT(USER) SCHEDULE REPORT.
+2020-09-13T19:40:34.435063[UTC], User Name: test, Report Exported: CONSULTANT(USER) SCHEDULE REPORT.
+2020-09-13T19:41:08.355039[UTC], User Name: test, logout successful.
+2020-09-14T00:03:31.840225[UTC], User Name: test, login successful.
+2020-09-14T00:03:53.574036[UTC], User Name: test,  Update Customer Successful: Customer ID  7
+2020-09-14T00:05:47.963381[UTC], User Name: test, login successful.
+2020-09-14T00:06:48.446875[UTC], User Name: test,  Update Customer Successful: Customer ID  7
+2020-09-14T00:06:50.746411[UTC], User Name: test, logout successful.
+2020-09-14T00:08:11.411856[UTC], User Name: test, login successful.
+2020-09-14T00:08:34.380262[UTC], User Name: test,  Update Customer Successful: Customer ID  2
+2020-09-14T00:08:49.351866[UTC], User Name: test, Update Appointment Successful: AppointmentID  18
+2020-09-14T00:09:14.664354[UTC], User Name: test, logout successful.
+2020-09-14T00:09:30.964169[UTC], User Name: test, login successful.
+2020-09-14T00:10:36.832141[UTC], User Name: test, login successful.
+2020-09-14T00:12:00.440968[UTC], User Name: test, Add New Appointment Successful: AppointmentID  25
+2020-09-14T00:12:03.229565[UTC], User Name: test, logout successful.
